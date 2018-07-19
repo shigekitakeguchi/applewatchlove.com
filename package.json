@@ -1,0 +1,14 @@
+{
+  "name": "applewatchlove.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "apicache": "^1.2.1",
+    "express": "^4.16.3",
+    "open-graph-scraper": "^3.5.0"
+  }
+}

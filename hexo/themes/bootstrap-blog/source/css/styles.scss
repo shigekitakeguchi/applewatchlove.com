@@ -1,0 +1,60 @@
+/* Concatenates the stylesheet files */
+@import "hexo-base";
+@import "callouts";
+@import "share-box";
+@import "highlight-js";
+@import "custom";
+@import "override";
+
+$breakpoint-tablet: 980px;
+$breakpoint-mobile: 736px;
+
+@mixin max-screen($break-point) {
+  @media screen and (max-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin min-screen($break-point) {
+  @media screen and (min-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin screen($break-point-min, $break-point-max) {
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}
+
+a {
+  color: #ff3399;
+}
+
+a:hover {
+  color: #ff3399;
+  text-decoration: underline;
+}
+
+.add-cart {
+  width: 110px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+  background-color: #ff3399;
+  padding: 6px 12px;
+  border-radius: 12px;
+  margin-top: 12px;
+  .fa-cart-plus {
+    margin-right: 24px;
+  }
+}
+
+.amazon-link {
+  line-height: 1.2;
+}
+
+.large-image {
+  width: 100%;
+}
